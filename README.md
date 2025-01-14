@@ -59,4 +59,17 @@ This repository implements a comprehensive pipeline for anomaly detection in Con
 Install dependencies with:
 ```bash
 pip install -r requirements.txt
-# VNIDS
+
+---
+
+## Usage
+
+### 1. Prepare the Dataset
+- Place your standard dataset Excel file (e.g., `random_can_data.xlsx`) in the project directory.
+- Ensure the dataset contains the required columns: `CAN_ID` and `Frequency (Hz)`.
+
+### 2. Run the Pipeline
+- Execute the main script by running the following command in your terminal:
+  ```bash
+  python main.py
+
