@@ -82,13 +82,13 @@ The script produces the following visualizations to aid in interpreting the resu
   - Displays the distribution of reconstruction errors.
   - Highlights the threshold used to classify anomalies.
   - Example:
-    ![Reconstruction Error Distribution](path/to/reconstruction_error_plot.png)
+    ![Reconstruction Error Distribution](precision.png)
 
 - **Anomaly Detection Scatter Plot**:
   - Differentiates between normal and anomalous samples.
   - Normal data points are shown in blue, while anomalies are highlighted in red.
   - Example:
-    ![Anomaly Detection Scatter Plot](path/to/anomaly_detection_plot.png)
+    ![Anomaly Detection Scatter Plot](Confusion.png)
 
 ### 2. Console Metrics
 Key performance metrics and a confusion matrix are displayed in the console:
