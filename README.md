@@ -59,8 +59,8 @@ This repository implements a comprehensive pipeline for anomaly detection in Con
 Install dependencies with:
 ```bash
 pip install -r requirements.txt
+```
 
----
 
 ## Usage
 
@@ -72,4 +72,49 @@ pip install -r requirements.txt
 - Execute the main script by running the following command in your terminal:
   ```bash
   python main.py
+  ```
+## Output
+
+### 1. Generated Visualizations
+The script produces the following visualizations to aid in interpreting the results:
+
+- **Reconstruction Error Distribution**:
+  - Displays the distribution of reconstruction errors.
+  - Highlights the threshold used to classify anomalies.
+  - Example:
+    ![Reconstruction Error Distribution](path/to/reconstruction_error_plot.png)
+
+- **Anomaly Detection Scatter Plot**:
+  - Differentiates between normal and anomalous samples.
+  - Normal data points are shown in blue, while anomalies are highlighted in red.
+  - Example:
+    ![Anomaly Detection Scatter Plot](path/to/anomaly_detection_plot.png)
+
+### 2. Console Metrics
+Key performance metrics and a confusion matrix are displayed in the console:
+
+- **Performance Metrics**:
+  - Precision: Indicates the proportion of correctly identified anomalies among all detected anomalies.
+  - Recall: Measures the proportion of true anomalies correctly identified.
+  - F1-Score: The harmonic mean of precision and recall.
+
+  Example Output:
+![Performance Metrics](precision.png)
+
+
+  
+- **Confusion Matrix**:
+- Provides a detailed view of the classification results, showing true positives, false positives, true negatives, and false negatives.
+
+Example:
+![Performance Metrics](Confusion.png)
+
+
+
+### 3. Refinement with Threshold Adjustment
+- Adjust the anomaly detection threshold in the `detect_anomalies` function to fine-tune results:
+```python
+threshold = 0.01  # Adjust this value to refine anomaly detection
+```
+![Performance Metrics](threshold.png)
 
